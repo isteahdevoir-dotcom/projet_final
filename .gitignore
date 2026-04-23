@@ -1,0 +1,24 @@
+# virtualenv
+env/
+
+# Database
+db.sqlite3
+
+# Python
+__pycache__/
+*.pyc
+
+# Evironnement variables
+.env
+
+# Static files
+/staticfiles/
+
+# Media files
+/media/
+
+# VS code
+.vscode/
+
+# Mac
+.DS_Store

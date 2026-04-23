@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="row justify-content-center">
+    <div class="col-md-6">
+        <div class="card p-4 shadow">
+
+            <h3 class="mb-4 text-center">Détail de la dépense</h3>
+
+            <p><strong>Titre :</strong> {{ depense.titre }}</p>
+            <p><strong>Montant :</strong> {{ depense.montant }} $</p>
+            <p><strong>Catégorie :</strong> {{ depense.categorie }}</p>
+            <p><strong>Date :</strong> {{ depense.date }}</p>
+            <p><strong>Description :</strong> {{ depense.description }}</p>
+
+            <div class="text-center mt-4">
+                <a href="{% url 'liste_depenses' %}" class="btn btn-custom">
+                    Retour
+                </a>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+{% endblock %}
